@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>"Draw to Latex"</title>
+        <link rel="icon" href="../static/7122_bigbrain.png">
+
+        <!--link to css-->
+        <link href="../static/submitbutton.css" rel="stylesheet">
+
+        <!--jquery reference (saved)-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!--mathjax api (saved)-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+                <!--    <body style="background-image: url('images/bcf.png');">-->
+    <body>
+
+    <center>
+
+        <img src="{{url_for('static', filename='7122_bigbrain.png')}}" alt="Big Brain!" width="50" height="50">
+        <p style = "font-family:'Calibri Light','Calibri Light',sans-serif;font-size:20px;">LaTeX Converter</p>
+        <div id="canvas"></div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='canvasfile.js')}}"></script>
+        <button class="button" id="submitbutton" onclick="submit()">Submit Image</button>
+        <button class="button" id="redraw" onclick="restart()">Restart</button>
+
+        <p id="uri"></p>
+        <p id="completed"></p>
+        <script type="text/javascript" src="{{url_for('static', filename='buttons.js')}}"></script>
+
+
+    </center>
+
+    </body>
+
+</html>
