@@ -1,0 +1,2 @@
+# HandwritingToLatex
+LaTeX is a great tool for authors of research papers to format and typeset math formulas, we wanted to try working with LaTeX and converting handwriting to LaTeX code. How this project works is by taking a JavaScript canvas image and sending it to a Flask server. This server then runs the image through a convolutional neural network, trying its best to predict the numbers and characters and finally converts the expression into LaTeX form.
