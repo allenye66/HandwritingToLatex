@@ -1,0 +1,13 @@
+.button {
+    background-color: #d3d3d3;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Calibri Light", Calibri, serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: darkgray;
+}
